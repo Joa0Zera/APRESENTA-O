@@ -75,7 +75,7 @@ document.getElementById("cep").addEventListener("focusout", pesquisarCep);
 // CPF --------------------------------------
 // Função para consumir API
 function buscar() {
-    fetch('dados.json').then(resposta => resposta.json()).then(corpo => {
+    fetch('https://raw.githubusercontent.com/Joa0Zera/JSON-CPF/refs/heads/main/dados.json').then(resposta => resposta.json()).then(corpo => {
     
         var identificador = document.getElementById('valor').value;
         var encontrado = false;
@@ -105,7 +105,6 @@ function buscar() {
     });
     
     }
-    
     
       
     
