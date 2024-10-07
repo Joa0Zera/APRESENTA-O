@@ -1,4 +1,4 @@
-fetch('produtos.json')
+fetch('https://raw.githubusercontent.com/Joa0Zera/JSON-PRODUTOS/refs/heads/main/produtos.json')
     .then(response => response.json())
     .then(products => {
         const productGrid = document.getElementById('productGrid');
